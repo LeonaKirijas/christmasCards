@@ -1,0 +1,14 @@
+with open('employees.txt',mode= 'r') as file:
+    names = file.read().splitlines()
+
+with open('template.txt',mode= 'r') as file:
+    template = file.read()
+
+for name in names:
+    content = template.replace('NAME', name )
+
+'christmasCards'f = christmasCards/card_{name}.txt'
+
+    with open('christmasCards', mode= 'w') as file:
+        file.write(content)
+        
